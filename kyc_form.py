@@ -10,6 +10,7 @@ gst = st.text_input("GSTIN (if applicable)")
 address = st.text_area("Business Address")
 contact = st.text_input("Contact Number")
 email = st.text_input("Email Address")
+print("Hello")
 
 if st.button("Submit"):
     st.success("KYC Submitted Successfully!")
