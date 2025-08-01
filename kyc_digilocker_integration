@@ -1,0 +1,13 @@
+import streamlit as st
+
+st.title("DigiLocker Document Upload")
+
+st.write("🔐 Simulated DigiLocker Integration")
+
+doc_type = st.selectbox("Document Type", ["Aadhaar XML", "PAN Card", "GST Certificate"])
+uploaded_file = st.file_uploader("Upload Document", type=["xml", "pdf", "jpg", "png"])
+
+if uploaded_file:
+    st.success(f"{doc_type} uploaded successfully!")
+    # Simulate storing in CKYCR format
+    st.write("✅ Document ready for CKYCR sync.")
